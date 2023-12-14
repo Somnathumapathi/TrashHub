@@ -10,7 +10,7 @@ class WelcomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Eco Hub',
+          'Trash Hub',
         ),
         //   style: Theme.of(context).textTheme.displayLarge,
         // ).addTopMargin(30),
