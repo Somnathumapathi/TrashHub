@@ -11,17 +11,17 @@ class EcoperksScreen extends StatefulWidget {
 }
 
 class _EcoperksScreenState extends State<EcoperksScreen> {
-  // String? productKey;
-  // String? garbageKey;
-  // int? userID;
-  // double? userPoints;
-  // String mode = 'Product';
+  String? productKey;
+  String? garbageKey;
+  int? userID;
+  double? userPoints;
+  String mode = 'Product';
 
-  // @override
-  // void initState() {
-  //   initialize();
-  //   super.initState();
-  // }
+  @override
+  void initState() {
+    // initialize();
+    super.initState();
+  }
 
   // initialize() async {
   //   //Set the UserID
