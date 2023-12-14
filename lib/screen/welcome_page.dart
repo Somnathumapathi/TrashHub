@@ -10,7 +10,7 @@ class WelcomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'RED FRONTIER',
+          'Eco Hub',
         ),
         //   style: Theme.of(context).textTheme.displayLarge,
         // ).addTopMargin(30),
@@ -26,7 +26,7 @@ class WelcomePage extends StatelessWidget {
             height: 20,
           ),
           Text(
-            'Welcome to TrashHub',
+            'Welcome to EcoHub',
             style: Theme.of(context).textTheme.displayLarge,
           ),
           const Spacer(),
