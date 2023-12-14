@@ -20,7 +20,7 @@ class _TrashHubState extends State<TrashHub> {
     if (prefs.getString('loggedin_username') != null) {
       Navigator.of(context).pushAndRemoveUntil(
         MaterialPageRoute(builder: (context) {
-          return Home();
+          return const Home();
         }),
         (route) => false,
       );
@@ -103,7 +103,7 @@ class _TrashHubState extends State<TrashHub> {
                         color: Colors.green,
                         bottomShadowColor:
                             const Color.fromARGB(255, 42, 118, 45),
-                        rightShadowColor: Color.fromARGB(255, 53, 114, 53),
+                        rightShadowColor: const Color.fromARGB(255, 53, 114, 53),
                         buttonPosition: Position.fullBottom,
                         depth: 7,
                         onTapUp: () {

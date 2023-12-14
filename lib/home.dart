@@ -2,12 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:trashhub/backend/backend.dart';
 import 'package:trashhub/recyclex/recyclex.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:trashhub/ecoperks/ecoperkshomoe.dart';
 import 'package:trashhub/trashhub.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -49,7 +46,7 @@ class _HomeState extends State<Home> {
           title: Text(appBar),
           backgroundColor: Colors.green,
         ),
-        body: Container(
+        body: SizedBox(
           width: double.infinity,
           // decoration: const BoxDecoration(
           //   image: DecorationImage(
@@ -59,7 +56,7 @@ class _HomeState extends State<Home> {
           // ),
           child: Column(
             children: [
-              SizedBox(height: 100),
+              const SizedBox(height: 100),
               Text(
                 'Welcome to TrashHub',
                 style: GoogleFonts.lato(

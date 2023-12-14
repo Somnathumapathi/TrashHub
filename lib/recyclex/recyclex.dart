@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:toast/toast.dart';
 import 'package:trashhub/backend/backend.dart';
-import 'package:trashhub/data/models/recyclexmodel.dart';
+import 'package:trashhub/data/models/recyclehubmodel.dart';
 import 'package:trashhub/recyclex/recentercard.dart';
 
 class RecycleHub extends StatefulWidget {
@@ -62,7 +61,7 @@ class _RecycleHubState extends State<RecycleHub> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 100),
+            const SizedBox(height: 100),
             const SizedBox(
               height: 20,
             ),
@@ -73,13 +72,13 @@ class _RecycleHubState extends State<RecycleHub> {
                 style: GoogleFonts.aBeeZee(
                     fontSize: 15, fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               ...jobs
                   .map(
                     (j) => j.status == 'completed'
-                        ? SizedBox()
+                        ? const SizedBox()
                         : ListTile(
-                            contentPadding: EdgeInsets.symmetric(
+                            contentPadding: const EdgeInsets.symmetric(
                                 horizontal: 30, vertical: 10),
                             title: Text('${j.partnerName} (${j.partnerType})'),
                             subtitle: Column(

@@ -1,4 +1,3 @@
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -6,7 +5,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:toast/toast.dart';
 import 'package:trashhub/backend/backend.dart';
-import 'package:trashhub/data/models/recyclexmodel.dart';
+import 'package:trashhub/data/models/recyclehubmodel.dart';
 
 import '../utils.dart';
 
@@ -86,7 +85,7 @@ class _RecycleCentreCardState extends State<RecycleCentreCard> {
       return;
     }
 
-    LatLng loc = LatLng(12.9198, 77.5777);
+    LatLng loc = const LatLng(12.9198, 77.5777);
     final res = await TrashHubBackend().requestJob(
       name: name,
       status: 'requested',

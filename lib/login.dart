@@ -81,7 +81,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     Toast.show('Logged in!');
                     Navigator.of(context).pushAndRemoveUntil(
                       MaterialPageRoute(builder: (context) {
-                        return Home();
+                        return const Home();
                       }),
                       (route) => false,
                     );
