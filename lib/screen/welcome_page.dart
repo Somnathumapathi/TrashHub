@@ -21,12 +21,12 @@ class WelcomePage extends StatelessWidget {
         child: Column(children: [
           const Spacer(),
           SizedBox(
-              height: 330, child: Image.asset('assets/images/welcomepng.png')),
+              height: 360, child: Image.asset('assets/images/welcomepng.png')),
           const SizedBox(
             height: 20,
           ),
           Text(
-            'Welcome to EcoHub',
+            'Welcome to Trash Hub',
             style: Theme.of(context).textTheme.displayLarge,
           ),
           const Spacer(),
@@ -48,7 +48,7 @@ class WelcomePage extends StatelessWidget {
                 vertical: 15,
               ),
               child: Text(
-                'Login to RedFrontier',
+                'Login to Trash Hub',
                 style: TextStyle(
                     color: Colors.black,
                     fontSize: 20,
