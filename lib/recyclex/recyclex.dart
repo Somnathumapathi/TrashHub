@@ -58,11 +58,17 @@ class _RecycleHubState extends State<RecycleHub> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 200, 241, 244),
+      appBar: AppBar(
+        title: const Text(
+          'RecycleHub',
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
+      backgroundColor: const Color.fromARGB(255, 80, 157, 162),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 100),
+            const SizedBox(height: 100),
             const SizedBox(
               height: 20,
             ),
@@ -73,13 +79,13 @@ class _RecycleHubState extends State<RecycleHub> {
                 style: GoogleFonts.aBeeZee(
                     fontSize: 15, fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               ...jobs
                   .map(
                     (j) => j.status == 'completed'
-                        ? SizedBox()
+                        ? const SizedBox()
                         : ListTile(
-                            contentPadding: EdgeInsets.symmetric(
+                            contentPadding: const EdgeInsets.symmetric(
                                 horizontal: 30, vertical: 10),
                             title: Text('${j.partnerName} (${j.partnerType})'),
                             subtitle: Column(

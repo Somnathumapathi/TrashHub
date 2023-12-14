@@ -28,40 +28,43 @@ class _EcoPerksFragmentState extends State<EcoPerksFragment> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        if (mode == 'loading') ...[
-          const Center(
-            child: CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(Colors.green),
-            ),
-          ),
-        ] else ...[
-          Text(
-            'Scan $mode',
-            style: const TextStyle(
-              fontSize: 30,
-            ),
-          ),
-          const SizedBox(height: 5),
-          Text("EcoPerks Points: ${userPoints ?? 'loading'}"),
-          const SizedBox(height: 20),
-          Center(
-            child: InkWell(
-              onTap: onScanButtonPressed,
-              child: const CircleAvatar(
-                radius: 70,
-                child: Icon(
-                  Icons.qr_code,
-                  size: 50,
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          'Eco Perks',
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            if (mode == 'loading') ...[
+              const Center(
+                child: CircularProgressIndicator(
+                  valueColor: AlwaysStoppedAnimation<Color>(Colors.green),
                 ),
               ),
-            ),
-          ),
-        ],
-      ],
+            ] else ...[
+              Text(
+                'Scan $mode',
+                style: const TextStyle(fontSize: 30, color: Colors.white),
+              ),
+              const SizedBox(height: 5),
+              Text(
+                "EcoPerks Points: ${userPoints ?? 'loading'}",
+                style: const TextStyle(color: Colors.white),
+              ),
+              const SizedBox(height: 20),
+            ],
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: onScanButtonPressed,
+        child: const Icon(Icons.qr_code),
+      ),
     );
   }
 

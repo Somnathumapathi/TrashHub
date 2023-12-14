@@ -47,7 +47,8 @@ class _HomeState extends State<Home> {
       return Scaffold(
         appBar: AppBar(
           title: Text(appBar),
-          backgroundColor: Colors.green,
+          backgroundColor: const Color.fromARGB(255, 2, 67, 4),
+          foregroundColor: Colors.white,
         ),
         body: Container(
           width: double.infinity,
@@ -153,10 +154,10 @@ class _HomeState extends State<Home> {
       body: getContent(),
       bottomNavigationBar: GNav(
         selectedIndex: pageIndex,
-        backgroundColor: Colors.green,
+        backgroundColor: Color.fromARGB(255, 0, 0, 0),
         color: Colors.white,
         activeColor: Colors.white,
-        tabBackgroundColor: const Color.fromARGB(138, 14, 99, 17),
+        tabBackgroundColor: Color.fromARGB(144, 2, 91, 19),
         onTabChange: (i) {
           pageIndex = i;
           setState(() {

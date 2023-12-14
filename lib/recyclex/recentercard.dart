@@ -220,14 +220,15 @@ class _RecycleCentreCardState extends State<RecycleCentreCard> {
                   child: Container(
                     margin: const EdgeInsets.symmetric(horizontal: 7),
                     child: Card(
+                      color: Colors.black,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Image.asset(
                             centre.imagePath,
                             fit: BoxFit.cover,
-                            height: 120,
-                            width: 270, // Adjust the image height as needed
+                            height: 100,
+                            width: 270,
                           ),
                           const SizedBox(height: 8),
                           Padding(
@@ -235,15 +236,17 @@ class _RecycleCentreCardState extends State<RecycleCentreCard> {
                             child: Text(
                               'Name : ${centre.name}',
                               style: GoogleFonts.aBeeZee(
-                                  fontWeight: FontWeight.bold),
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white),
                             ),
                           ),
                           Padding(
                             padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
                             child: Text(
                               'Type : ${centre.type}',
-                              style:
-                                  GoogleFonts.lato(fontWeight: FontWeight.bold),
+                              style: GoogleFonts.lato(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white),
                             ),
                           ),
                           ElevatedButton.icon(
