@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:trashtrace/backend/backend.dart';
-import 'package:trashtrace/recyclex/recyclex.dart';
+import 'package:trashhub/backend/backend.dart';
+import 'package:trashhub/recyclex/recyclex.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:trashtrace/ecoperks/ecoperkshomoe.dart';
-import 'package:trashtrace/trashtrace.dart';
+import 'package:trashhub/ecoperks/ecoperkshomoe.dart';
+import 'package:trashhub/trashhub.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Home extends StatefulWidget {

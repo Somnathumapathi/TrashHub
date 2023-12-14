@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:toast/toast.dart';
-import 'package:trashtrace/login.dart';
-import 'package:trashtrace/utils.dart';
+import 'package:trashhub/login.dart';
+import 'package:trashhub/utils.dart';
 
 import 'backend/backend.dart';
 import 'home.dart';

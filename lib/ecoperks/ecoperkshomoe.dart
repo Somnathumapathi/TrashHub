@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:toast/toast.dart';
-import 'package:trashtrace/utils.dart';
+import 'package:trashhub/utils.dart';
 import '../backend/backend.dart';
 import 'package:qrscan/qrscan.dart' as scanner;
 

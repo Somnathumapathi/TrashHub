@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:trashtrace/trashtrace.dart';
+import 'package:trashhub/trashhub.dart';
 
 void main() {
   runApp(MaterialApp(

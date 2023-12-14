@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:neopop/widgets/buttons/neopop_button/neopop_button.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:trashtrace/home.dart';
-import 'package:trashtrace/login.dart';
-import 'package:trashtrace/register.dart';
+import 'package:trashhub/home.dart';
+import 'package:trashhub/login.dart';
+import 'package:trashhub/register.dart';
 
 class TrashHub extends StatefulWidget {
   const TrashHub({super.key});

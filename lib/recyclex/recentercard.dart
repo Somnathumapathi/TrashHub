@@ -5,8 +5,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:toast/toast.dart';
-import 'package:trashtrace/backend/backend.dart';
-import 'package:trashtrace/data/models/recyclexmodel.dart';
+import 'package:trashhub/backend/backend.dart';
+import 'package:trashhub/data/models/recyclexmodel.dart';
 
 import '../utils.dart';
 

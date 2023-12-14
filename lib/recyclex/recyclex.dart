@@ -3,9 +3,9 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:toast/toast.dart';
-import 'package:trashtrace/backend/backend.dart';
-import 'package:trashtrace/data/models/recyclexmodel.dart';
-import 'package:trashtrace/recyclex/recentercard.dart';
+import 'package:trashhub/backend/backend.dart';
+import 'package:trashhub/data/models/recyclexmodel.dart';
+import 'package:trashhub/recyclex/recentercard.dart';
 
 class RecycleHub extends StatefulWidget {
   const RecycleHub({super.key});
