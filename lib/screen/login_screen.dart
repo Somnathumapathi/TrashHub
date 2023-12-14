@@ -1,3 +1,4 @@
+import 'package:eco_hub/screen/home_page.dart';
 import 'package:eco_hub/screen/home_screen.dart';
 import 'package:eco_hub/screen/register_screen.dart';
 import 'package:flutter/material.dart';
@@ -83,7 +84,7 @@ class LoginScreen extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => HomeScreen()));
+                                  builder: (context) => HomePage()));
                         },
                         child: const Padding(
                           padding: EdgeInsets.symmetric(
