@@ -114,55 +114,7 @@ class TrashHubBackend {
     return ResponseType(result: null, message: res.body);
   }
 
-  // Future<ResponseType<List<Dustbin>?>> getAllBins() async {
-  //   final root = await getServerLink();
-
-  //   List<Dustbin> dustbins = [];
-  //   final uri = Uri.parse("$root/binocculars/get_all");
-  //   final res = await http.get(uri);
-
-  //   if (res.statusCode == 200) {
-  //     final resdata = jsonDecode(res.body);
-  //     for (final x in resdata) {
-  //       final d = Dustbin.fromJson(x);
-  //       dustbins.add(d);
-  //     }
-  //   } else {
-  //     return ResponseType(
-  //       result: null,
-  //       message: 'Server Side Error (${res.statusCode})',
-  //     );
-  //   }
-  //   return ResponseType(result: dustbins, message: 'success');
-  // }
-
-  // Future<ResponseType<List<Dustbin>?>> getProximalBins({
-  //   required double lat,
-  //   required double lng,
-  //   required double radius,
-  // }) async {
-  //   final root = await getServerLink();
-  //   List<Dustbin> dustbins = [];
-  //   final uri = Uri.parse("$root/binocculars/get_proximal/$lat/$lng/$radius");
-  //   final res = await http.get(uri);
-  //   if (res.statusCode == 200) {
-  //     final resdata = jsonDecode(res.body);
-  //     for (final x in resdata) {
-  //       final d = Dustbin.fromJson(x);
-  //       dustbins.add(d);
-  //     }
-  //   } else {
-  //     return ResponseType(
-  //       result: null,
-  //       message: 'Server Side Error (${res.statusCode})',
-  //     );
-  //   }
-  //   return ResponseType(result: dustbins, message: 'success');
-  // }
-
-  // ====================== (RCX) ============================
-
-  Future<ResponseType<List<Map>?>> getRCXPartners(
+  Future<ResponseType<List<Map>?>> getRCHPartners(
       {String filter = 'all'}) async {
     final root = await getServerLink();
 

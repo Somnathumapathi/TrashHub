@@ -1,11 +1,11 @@
-class RCXPartner {
+class RCHPartner {
   final int id;
   final String name;
   final String type;
   final String imagePath;
   final String contact;
 
-  RCXPartner({
+  RCHPartner({
     required this.id,
     required this.name,
     required this.type,

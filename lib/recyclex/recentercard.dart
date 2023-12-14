@@ -19,7 +19,7 @@ class RecycleCentreCard extends StatefulWidget {
 }
 
 class _RecycleCentreCardState extends State<RecycleCentreCard> {
-  List<RCXPartner> centres = [];
+  List<RCHPartner> centres = [];
 
   bool centreLoading = false;
 
@@ -53,7 +53,7 @@ class _RecycleCentreCardState extends State<RecycleCentreCard> {
   }) async {
     centreLoading = true;
     setState(() {});
-    final partners = await TrashHubBackend().getRCXPartners(filter: filter);
+    final partners = await TrashHubBackend().getRCHPartners(filter: filter);
     if (partners.result == null) {
       print('ERROR => ${partners.message}');
       return;
@@ -61,7 +61,7 @@ class _RecycleCentreCardState extends State<RecycleCentreCard> {
     for (final partner in partners.result!) {
       centres = [
         ...centres,
-        RCXPartner(
+        RCHPartner(
           id: partner['id'],
           name: partner['name'],
           type: partner['type'],
@@ -107,27 +107,6 @@ class _RecycleCentreCardState extends State<RecycleCentreCard> {
     getAllPartners();
   }
 
-  // final List<RCXPartner> centres = [
-  //   RCXPartner(
-  //     name: 'Muthu Recycle',
-  //     type: 'All',
-  //     imagePath: 'assets/RecycleHubpt.jpeg',
-  //     contact: '9901552081',
-  //   ),
-  //   RCXPartner(
-  //     name: 'Santhosh Recycle',
-  //     type: 'Electrical',
-  //     imagePath: 'assets/RecycleHubpt.jpeg',
-  //     contact: '9449320808',
-  //   ),
-  //   RCXPartner(
-  //     name: 'Kawasaki Recycle',
-  //     type: 'Steel',
-  //     imagePath: 'assets/RecycleHubpt.jpeg',
-  //     contact: '7483070772',
-  //   ),
-  // ];
-
   final centerimages = [
     "assets/RecycleHubpt3.webp",
     "assets/RecycleHubpt3.webp",
@@ -137,7 +116,7 @@ class _RecycleCentreCardState extends State<RecycleCentreCard> {
     "assets/RecycleHubpt1.jpg",
   ];
 
-  void _openCentreDetails(BuildContext context, RCXPartner centre) {
+  void _openCentreDetails(BuildContext context, RCHPartner centre) {
     showModalBottomSheet<void>(
       context: context,
       builder: (BuildContext context) {
