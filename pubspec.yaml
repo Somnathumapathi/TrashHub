@@ -39,6 +39,7 @@ dependencies:
   qr_scanner: ^0.0.2-259.9.beta
   shared_preferences: ^2.2.2
   toast: ^0.3.0
+  google_maps_flutter: ^2.5.0
 
 dev_dependencies:
   flutter_test:

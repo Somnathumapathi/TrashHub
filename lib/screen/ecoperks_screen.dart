@@ -78,6 +78,11 @@ class _EcoperksScreenState extends State<EcoperksScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Center(
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [Text('Perks Earned: 20')]),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Icon(Icons.qr_code),

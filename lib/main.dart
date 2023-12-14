@@ -14,7 +14,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Trash Hub',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        textTheme: const TextTheme(
+          displayLarge: TextStyle(fontSize: 28.0, fontWeight: FontWeight.bold),
+          displayMedium: TextStyle(fontSize: 26.0, fontWeight: FontWeight.bold),
+          displaySmall: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),
+          headlineMedium:
+              TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+          bodyLarge: TextStyle(fontSize: 16.0),
+          bodyMedium: TextStyle(fontSize: 14.0),
+        ),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
       ),
       home: WelcomePage(),
