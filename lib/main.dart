@@ -5,10 +5,12 @@ void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
-      primarySwatch: Colors.green,
+      primaryColor: Color(0xFF4CAF50), // Green
+      // Light Green
+      scaffoldBackgroundColor: Colors.white,
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.green,
+          backgroundColor: Color.fromARGB(255, 9, 91, 11),
         ),
       ),
     ),

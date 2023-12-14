@@ -48,6 +48,7 @@ dependencies:
   http:
   shared_preferences:
   carousel_slider: ^4.2.1
+  neopop: ^1.0.2
 
 dev_dependencies:
   flutter_test:

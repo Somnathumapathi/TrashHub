@@ -45,6 +45,10 @@ class _HomeState extends State<Home> {
   getContent() {
     if (pageIndex == 0) {
       return Scaffold(
+        appBar: AppBar(
+          title: Text(appBar),
+          backgroundColor: Colors.green,
+        ),
         body: Container(
           width: double.infinity,
           // decoration: const BoxDecoration(
